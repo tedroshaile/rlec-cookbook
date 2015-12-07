@@ -12,3 +12,8 @@ Attributes
 * `default['rlec']['systune']`: if true, RLEC will be set up with `systune=yes`
 * `default['rlec']['platform']`: the RLEC platform. `rhel6-x86_64`, `rhel7-x86_64`, or `trusty-amd64`
 * `default['rlec']['version']`: the version number of RLEC to install
+
+Recipes
+=======
+* `rlec::default`: installs and configures RLEC.
+* `rlec::logrotate`: configures logrotate to rotate RLEC's logs.
