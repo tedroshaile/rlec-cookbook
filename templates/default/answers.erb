@@ -1,3 +1,4 @@
 systune=<%= node['rlec']['systune'] ? 'yes' : 'no' %>
 ntp=<%= node['rlec']['ntp'] ? 'yes' : 'no' %>
 firewall=<%= node['rlec']['firewall'] ? 'yes' : 'no' %>
+<% unless node['rlec']['version'].start_with?('4.2') %>rlcheck=<%= node['rlec']['rlcheck'] ? 'yes' : 'no' %><% end %>
