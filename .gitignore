@@ -1,6 +1,9 @@
 .vagrant
 /cookbooks
 
+# VSCode
+debug.log
+
 # Bundler
 bin/*
 .bundle/*
